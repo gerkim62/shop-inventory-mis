@@ -6,8 +6,10 @@ import bcrypt
 app = Flask(__name__)
 app.secret_key = "your_secret_key"
 
+# Hj1onMRG9gQnVmFo
+
 # MongoDB configuration
-app.config['MONGO_URI'] = 'mongodb://localhost:27017/shop_inventory'
+app.config['MONGO_URI'] = "mongodb+srv://gerkim62:Hj1onMRG9gQnVmFo@cluster0.sj7b0xr.mongodb.net/"
 mongo = PyMongo(app)
 
 # clear the database
