@@ -1,0 +1,169 @@
+/* Apply default styles to all HTML elements */
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Page Content */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Form Elements */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button,
+.menu-link {
+  padding: 5px 10px;
+  background-color: #28a745; /* Greenish color */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #28a745; /* Greenish color */
+}
+
+.container {
+  width: 80%;
+
+  margin: 0 auto;
+  overflow-wrap: normal;
+  white-space: break-word;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left; */
+  width: max-content;
+}
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Greenish color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #218838; /* Darker shade of green */
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.product-item {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.product-name {
+  font-weight: bold;
+
+  text-transform: capitalize;
+}
+
+.delete-link,
+.update-link,
+.add-product-link {
+  background-color: #28a745; /* Greenish color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1px 6px;
+}
+
+.delete-link:hover,
+.update-link:hover,
+.add-product-link:hover {
+  background-color: #218838; /* Darker shade of green */
+}

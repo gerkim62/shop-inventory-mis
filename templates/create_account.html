@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container">
+      <p class="heading">
+        Since this is the first time you are logging in, please create an
+        account to continue.
+      </p>
+      <form action="{{ url_for('create_account') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        /><br /><br />
+        <button style="padding-inline: 20px; padding-block: 10px" type="submit">
+          Create Account
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

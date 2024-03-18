@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Inventory Management System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+      }
+      .heading {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .description {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .menu {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      .menu li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .menu-link {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        padding: 10px;
+      }
+      .menu-link:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Shop Inventory Management System</h1>
+    <div class="container">
+      <h1 class="heading">Welcome, {{ username }}!</h1>
+      <p class="description">
+        This is the Shop Inventory Management System. You can use this system to
+        manage the inventory of your shop.
+      </p>
+      <ul class="menu">
+        <li>
+          <a href="{{ url_for('add_product') }}" class="menu-link"
+            >Add Product</a
+          >
+        </li>
+        <li>
+          <a href="{{ url_for('view_products') }}" class="menu-link"
+            >View Products</a
+          >
+        </li>
+        <li>
+          <a href="{{ url_for('change_password') }}" class="menu-link"
+            >Change Password</a
+          >
+        </li>
+        <li><a href="{{ url_for('logout') }}" class="menu-link">Logout</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

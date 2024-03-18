@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invalid Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container">
+      <h1>Invalid Login</h1>
+      <p>Your username or password is incorrect. Please try again.</p>
+      <form action="{{ url_for('home') }}" method="get">
+        <button type="submit">Retry Login</button>
+      </form>
+    </div>
+  </body>
+</html>
