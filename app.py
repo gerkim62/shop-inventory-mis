@@ -13,11 +13,11 @@ app.config['MONGO_URI'] = "mongodb+srv://gerkim62:Hj1onMRG9gQnVmFo@cluster0.sj7b
 mongo = PyMongo(app)
 
 # clear the database
-print('Clearing the database')
-mongo.db.users.delete_many({})
-print('Cleared users')
-mongo.db.products.delete_many({})
-print('Cleared products')
+# print('Clearing the database')
+# mongo.db.users.delete_many({})
+# print('Cleared users')
+# mongo.db.products.delete_many({})
+# print('Cleared products')
 
 
 # Routes
